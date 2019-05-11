@@ -1,24 +1,24 @@
 package ej06;
 
-public class Nodo{
+public class ListNode{
 
-	private Nodo sig;
+	private ListNode sig;
 	private Comparable<Object> data;
 	
-	public Nodo(Nodo sig,Comparable<Object> data) {
+	public ListNode(ListNode sig,Comparable<Object> data) {
 		this.sig = sig;
 		this.data = data;
 	}
 	public Comparable<Object> getData() {
 		return data;
 	}
-	public Nodo next() {
+	public ListNode next() {
 		return sig;
 	}
 	public boolean hasNext() {
 		return sig==null;
 	}
-	public void setNext(Nodo sig) {
+	public void setNext(ListNode sig) {
 		this.sig = sig;
 	}
 }
